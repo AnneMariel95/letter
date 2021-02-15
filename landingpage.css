@@ -1,0 +1,44 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #98ff98;
+  font-family: 'Courier New';
+}
+
+.Wrapper {
+  max-width: 1200px;
+  height: 100vh;
+  /*margin: 0 auto;*/
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+  text-align: justify;
+}
+
+.visible {
+  animation: slideout 15s ease-in-out infinite;
+}
+
+@keyframes slideout {
+  from {
+    transform: translateY(70%);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
